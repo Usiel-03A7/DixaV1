@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/contactus.css">
+    
+    <title>Document</title>
+</head>
+<body>
+   
+    <%- include('./shared/navbar') %>
+    <div class="contactus__container">
+        <div class="contactus__container--left">
+            <h1>Contáctanos</h1>
+            <p>Si tienes alguna duda o sugerencia, no dudes en contactarnos.</p>
+            <p>Estamos para servirte.</p>
+        </div>
+        <div >
+            <form action="" class="contactus__container--right">
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Correo">
+                <input type="text" placeholder="Asunto">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <script src="/javascripts/contactus.js"></script>
+    </div>
+    <%- include('./shared/footer'); %>
+</body>
+</html>

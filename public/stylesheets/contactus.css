@@ -60,6 +60,8 @@ body {
 .contactus__container--left {
     display: flex;
     width: 100%;
+    color: #fff;
+    margin-top: 1rem;
     flex-direction: column;
     text-align: center;
     

@@ -12,6 +12,7 @@
    
     <%- include('./shared/navbar') %>
     <div class="contactus__container">
+       <div class="container">
         <div class="contactus__container--left">
             <h1>Contáctanos</h1>
             <p>Si tienes alguna duda o sugerencia, no dudes en contactarnos.</p>
@@ -20,12 +21,13 @@
         <div >
             <form action="" class="contactus__container--right">
                 <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Correo">
-                <input type="text" placeholder="Asunto">
+                <input type="email" placeholder="Correo">
+                <input type="text" maxlength="25" placeholder="Asunto">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
                 <input type="submit" value="Enviar">
             </form>
         </div>
+       </div>
         <script src="/javascripts/contactus.js"></script>
     </div>
     <%- include('./shared/footer'); %>

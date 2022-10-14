@@ -63,6 +63,13 @@ body {
   margin-bottom: 2rem ;
   text-align: center;
 }
+.carousel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  color: #fff;
+}
 /* .carrousel{
   width: 90%;
   max-width: 120em;

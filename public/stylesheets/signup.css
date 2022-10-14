@@ -1,6 +1,9 @@
 .form {
     margin-top: 10rem;
 }
+.formulario h1{
+ margin-top: 2rem;   
+}
 .formulario {
     display: flex;
     flex-direction: column;

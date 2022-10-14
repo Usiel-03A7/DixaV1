@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/contactus.css">
-    
+
     <title>Document</title>
 </head>
+
 <body>
-   
+
     <%- include('./shared/navbar') %>
-    <div class="contactus__container">
-       <div class="container">
-        <div class="contactus__container--left">
-            <h1>Contáctanos</h1>
-            <p>Si tienes alguna duda o sugerencia, no dudes en contactarnos.</p>
-            <p>Estamos para servirte.</p>
+        <div class="consejos__container">
+            <div class="consejos">
+                <h2>Arqui tips de ahorro en construcción</h2>
+                <h3>1.- Planear a largo plazo</h3>
+                <p>Planear a largo plazo te va a ayudar a tener mayor control sobre tu obra y sus gastos, para evitar
+                    sorpresas desagradables. Para esto puedes hacer dos cosas: definir tu proyecto y hacer un
+                    presupuesto.</p>
+                <h3>2.- Aprovechar los recursos</h3>
+                <p>Utilizar los materiales de la mejor forma posible es una de las mejores maneras para ahorrar al
+                    momento de construir.</p>
+                <p>Cuando empieces a conseguir los materiales de tu construcción, una buena idea es comprar por volumen,
+                    ya que así suelen ser más baratos. Y con un buen almacenamiento puedes tenerlos seguros mientras los
+                    usas.Recuerda que al comprar por volumen sólo debes comprar lo que necesitas. De esta manera no
+                    gastas en cosas que no vas a utilizar.</p>
+                <h3>3.- Programar el trabajo</h3>
+                <p>Finalmente, ya es momento de empezar a construir: ¡programa tu trabajo!
+                    Es posible que el proyecto que diseñaste tarde algún tiempo y lo vayas construyendo por etapas. Lo
+                    mejor es programarlo para ver en qué momentos vas a necesitar ayuda y qué etapas de la construcción
+                    puedes hacerlas tú mismo. Con eso vas a saber cuándo gastar y cuándo puedes ahorrar, y tendrás mayor
+                    control sobre el proceso y el tiempo de construcción para tomar las mejores decisiones.
+                </p>
+
+            </div>
         </div>
-        <div >
-            <form action="" class="contactus__container--right">
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Correo">
-                <input type="text" maxlength="25" placeholder="Asunto">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <input type="submit" value="Enviar">
-            </form>
+        <div class="contactus__container">
+            <div class="container">
+                <div class="contactus__container--left">
+                    <h1>Contáctanos</h1>
+                    <p>Si tienes alguna duda o sugerencia, no dudes en contactarnos.</p>
+                    <p>Estamos para servirte.</p>
+                </div>
+                <div>
+                    <form action="" class="contactus__container--right">
+                        <input type="text" placeholder="Nombre">
+                        <input type="email" placeholder="Correo">
+                        <input type="text" maxlength="25" placeholder="Asunto">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+            <script src="/javascripts/contactus.js"></script>
         </div>
-       </div>
-        <script src="/javascripts/contactus.js"></script>
-    </div>
-    <%- include('./shared/footer'); %>
+        <%- include('./shared/footer'); %>
 </body>
+
 </html>

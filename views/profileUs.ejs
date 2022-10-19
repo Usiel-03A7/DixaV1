@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar imagenes</title>
+    <link rel="stylesheet" href="/stylesheets/porfile.css">
+</head>
+
+<body>
+    <%- include('./shared/navbarProfile'); %>
+
+        <!--subir una imagen-->
+        <div class="container">
+            <form action="/profile" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <h2>Seleccione las imagenes a mostrar</h2>
+
+                    <label for="image"></label>
+                    <input type="name" placeholder="Nombre del Propietario">
+                    <input type="text" placeholder="Titulo del Proyecto">
+                    <input multiple type="file" name="image" id="image" class="form-control">
+                    <!--Generar random serial-->
+                    <div class="generate">
+                        <input type="text" name="" id="random" placeholder="Genera el sereal">
+                        <button type="submit" class="btn btn-primary">Generar</button>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion del Proyecto"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Subir proyecto</button>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

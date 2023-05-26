@@ -14,11 +14,12 @@
 <body>
   <%- include('./shared/navbar'); %>
     <!--Iniciar sesión -->
+
     <div class="form">
-        <form class="formulario" action="/signup" method="POST">
+        <form class="formulario" action="/login" method="POST">
             <h1>Iniciar Sesión </h1>
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Nombre">
+            <label for="name">Correo</label>
+            <input type="email" name="email" id="email" placeholder="Correo">
             <label for="password">Contraseña</label>
             <input type="password" name="password" id="password" placeholder="Contraseña">
            <div class="showpass">

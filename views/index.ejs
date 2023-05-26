@@ -28,62 +28,22 @@
     </section>
 
 
-    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-      <h2>Baños</h2>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/images/BannoLav.jpg" class="" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/images/bannoShw.jpg" class="" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/images/bannoRend.jpg" class="" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="true" data-bs-interval="false">
-      <h2>Cuartos</h2>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/images/cuarto.jpg" class="" alt="...">
-        </div>
-        <div class="carousel-item active">
-          <img src="/images/cocinaReal.jpg" class="" alt="...">
-        </div>
-        <div class="carousel-item active">
-          <img src="/images/cocinaRend.jpg" class="" alt="...">
-        </div>
-        <div class="carousel-item active">
-          <img src="/images/cocinaRendPpl.jpg" class="" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div class="proces" style="color: #fff;">
-      <h2>Apartado para Los renders</h2>
-      <h3>En proceso...</h3>
-    </div>
+   <div class="bannos" id="bannos" >
+    <h1>Baño</h1>
+   </div>
 
+   <div class="cocina" id="cocina" >
+    <h1>Cocina</h1>
+   </div>
+
+   <div class="cuartos" id="cuartos" >
+    <h1>Cuartos</h1>
+   </div>
+
+   <% for( let index = 0; index < datos.length; index++ ) { %>
+    <h2><%= datos[index].title %></h2>
+    <img src="<%= datos[index].image %>" alt="">
+   <% } %>
 
     <%- include('./shared/footer'); %>
 </body>
